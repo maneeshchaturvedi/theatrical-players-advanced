@@ -8,16 +8,16 @@ This project goes **beyond** Fowler's solution to demonstrate advanced domain mo
 
 ### Improvements Over Fowler's Solution
 
-| Aspect | Fowler's Solution | Our Advanced Solution |
-|--------|------------------|----------------------|
-| **Play Types** | String `"tragedy"` | Type-safe enum `PlayType.TRAGEDY` |
-| **Money** | `int` primitives | `Money` value object (Joda-Money) |
-| **Credits** | `int` primitives | `VolumeCredits` value object |
-| **Domain Objects** | Public fields, mutable | Private fields, immutable, validated |
-| **Associations** | String IDs | Object references |
-| **Pricing Rules** | Magic numbers | Named constants, explicit rules |
-| **Domain Separation** | Mixed calculation/presentation | Three separate domains |
-| **Type Safety** | Runtime errors | Compile-time errors |
+| Aspect                | Fowler's Solution              | Our Advanced Solution                |
+| --------------------- | ------------------------------ | ------------------------------------ |
+| **Play Types**        | String `"tragedy"`             | Type-safe enum `PlayType.TRAGEDY`    |
+| **Money**             | `int` primitives               | `Money` value object (Joda-Money)    |
+| **Credits**           | `int` primitives               | `VolumeCredits` value object         |
+| **Domain Objects**    | Public fields, mutable         | Private fields, immutable, validated |
+| **Associations**      | String IDs                     | Object references                    |
+| **Pricing Rules**     | Magic numbers                  | Named constants, explicit rules      |
+| **Domain Separation** | Mixed calculation/presentation | Three separate domains               |
+| **Type Safety**       | Runtime errors                 | Compile-time errors                  |
 
 ### Design Principles Applied
 
@@ -59,20 +59,24 @@ PRESENTATION DOMAIN (formatting)
 ## Building and Running
 
 ### Prerequisites
+
 - Java 8 or higher
 - Maven 3.6+
 
 ### Build
+
 ```bash
 mvn clean compile
 ```
 
 ### Run Tests
+
 ```bash
 mvn test
 ```
 
 ### Run Example
+
 ```bash
 mvn exec:java -Dexec.mainClass="com.stackshala.theatricalplayers.Main"
 ```
@@ -116,15 +120,11 @@ theatrical-players-advanced/
 
 - **Original Kata**: [Emily Bache's GitHub](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
 - **Fowler's Book**: "Refactoring: Improving the Design of Existing Code" (2nd Edition)
-- **Blog Post**: [Coming soon on Stackshala.com](https://www.stackshala.com)
+- **Blog Post**: [Coming soon on the Stackshala blog](https://www.blog.stackshala.com)
 
 ## Learning Resources
 
-Visit [Stackshala](https://www.stackshala.com) for:
-- Complete course on advanced refactoring
-- Video walkthroughs
-- Practice exercises
-- Professional coaching
+Visit [Stackshala](https://www.stackshala.com) for the complete course.
 
 ## License
 
